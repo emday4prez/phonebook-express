@@ -2,7 +2,7 @@ POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
- "content": "the queen of programming",
- "name": "Ada Lovelace",
- "number": "12-43-1234567"
+ "content": "the king of programming",
+ "name": "Alan Touring",
+ "number": "1234567"
 }
