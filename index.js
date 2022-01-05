@@ -7,11 +7,14 @@ app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cors())
 
+<<<<<<< HEAD
 
 
 morgan.token('body', (req, res) => JSON.stringify(req.body));
 app.use(morgan(':method :url :status :response-time ms - :res[content-length] :body - :req[content-length]'));
 
+=======
+>>>>>>> 44452f806f71f4d28336047e7683c39bc604e7f1
 
 let persons = [
     { 
@@ -37,7 +40,10 @@ let persons = [
 ]
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44452f806f71f4d28336047e7683c39bc604e7f1
 app.get('/api/persons', (request, response) => {
  response.json(persons)
 })
@@ -98,6 +104,7 @@ app.post('/api/persons', (request, response) => {
  response.json(person)
 })
 
+<<<<<<< HEAD
 const requestLogger = (request, response, next) => {
   console.log('Method:', request.method)
   console.log('Path:  ', request.path)
@@ -118,3 +125,8 @@ const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
+=======
+const PORT = 3001
+app.listen(PORT)
+console.log(`phonebook server running on port ${PORT}`)
+>>>>>>> 44452f806f71f4d28336047e7683c39bc604e7f1
